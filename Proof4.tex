@@ -1,0 +1,40 @@
+\documentclass[11 pt]{article}
+\title{induction proof}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{proposition}{Proposition}
+
+\newcommand{\newpar}{\vspace{.15in}\noindent}
+
+\begin{document}
+
+\noindent Jake Irons, MTH 325-02, Proof 4
+
+\newpar
+\begin{proposition}
+No odd integer can be expressed as the sum of three even integers.
+\end{proposition}
+\begin{proof}
+We will prove the given statement using proof by contradiction. We will assume there is an odd integer that can be expressed as the sum of three even integers and show this leads to a contradiction. We will call this odd integer $d$, and say there are even integers $a, b,$ and $c$ such that $d=a+b+c$.
+
+\newpar
+Since $a, b,$ and $c$ are even integers, by the definition of an even integer, we will say there are integers $x, y, z$ such that $a=2x$, $b=2y$ and $c=2z$. Therefore, we can say the following:
+\begin{align*}
+d&=a+b+c \\
+&=2x+2y+2z \\
+&=2(x+y+z). \\
+\end{align*}
+
+\newpar
+We will label $k=x+y+z$. Since $x$, $y$, and $z$ are integers and the set of integers are closed under the operation of addition, we know $k$ is an integer. Thus, since $d=2k$, we can conclude $d$ is an even integer by the definition of even. However, we said earlier that $d$ is an odd integer and have, therefore, reached a contradiction.
+
+\newpar
+Having reached a contradiction, we conclude that there is no odd integer that can be expressed as the sum of three even integers, which completes the proof.
+\end{proof}
+
+
+
+\end{document}

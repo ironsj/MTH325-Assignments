@@ -1,0 +1,43 @@
+\documentclass[11 pt]{article}
+\title{induction proof}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{proposition}{Proposition}
+
+\newcommand{\newpar}{\vspace{.15in}\noindent}
+
+\begin{document}
+
+\noindent Jake Irons, MTH 325-02, Proof 1
+
+\newpar
+\begin{proposition}
+For all natural numbers, $n$, 3 divides $4^n - 1$.
+\end{proposition}
+\begin{proof}
+We will prove the statement using mathematical induction. Let $P(n)$ be the predicate 3 divides $4^n-1$.
+
+\newpar
+When $n=0$, we obtain $4^0-1 = 0$. Since $0=3(0)$, by the definition of divides, 3 divides $4^0-1$. Therefore, $P(0)$ is true.
+
+\newpar We now assume that $P(k)$ is true and show that $P(k+1)$ is true. That is, we assume our induction hypothesis, 3 divides $4^k-1$ for some integer k, and show that 3 divides $4^{(k+1)}-1$. By the definition of divides, there exists and integer $q$ such that $4^k-1=3q$. Therefore, we can determine $4^k=3q+1$. Using algebra we obtain the following:
+\begin{align*}
+4^{(k+1)}-1&=4^k\cdot4^1-1 \\
+&= 4(3q+1)-1 \\
+&= 12q+4-1 \\
+&= 3(4q+1). \\
+\end{align*}
+
+\noindent
+We will label $d=4q+1$. Because 4, 1, and $q$ are integers and the set of integers is closed under the operation of multiplication and addition, we know that $d$ is also an integer. Because $4^{(k+1)}-1=3d$, it can be determined by the definition of divides that 3 divides $4^{(k+1)}-1$.
+
+\newpar
+We have proven that if the predicate $P(k)$ is true, then so is $P(k+1)$. By the principal of mathematical induction, the predicate is true for every $n\in{\mathbb{N}}$, and the proof is complete.
+\end{proof}
+
+
+
+\end{document}

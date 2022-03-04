@@ -1,0 +1,32 @@
+\documentclass[11 pt]{article}
+\title{induction proof}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{proposition}{Proposition}
+
+\newcommand{\newpar}{\vspace{.15in}\noindent}
+
+\begin{document}
+
+\noindent Jake Irons, MTH 325-02, Proof 5
+
+\newpar
+\begin{proposition}
+For all real numbers $x$ and $y$, if $x+y\ge2$, then $x\ge1$ or $y\ge1$.
+\end{proposition}
+\begin{proof}
+We will prove the given statement using proof by contradiction. We will assume that $x+y\ge2$ and that $x<1$ and $y<1$. Since $x<1$ and $y<1$, then $x+y<1+1$.
+
+\newpar
+Therefore, we have $x+y<2$. However, we said earlier that $x+y\ge2$ and, thus, have a contradiction.
+
+\newpar
+Having reached a contradiction, we conclude that for all real numbers $x$ and $y$, if $x+y\ge2$, then $x\ge1$ or $y\ge1$, completing the proof.
+\end{proof}
+
+
+
+\end{document}

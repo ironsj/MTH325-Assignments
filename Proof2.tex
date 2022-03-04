@@ -1,0 +1,41 @@
+\documentclass[11 pt]{article}
+\title{induction proof}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{proposition}{Proposition}
+
+\newcommand{\newpar}{\vspace{.15in}\noindent}
+
+\begin{document}
+
+\noindent Jake Irons, MTH 325-02, Proof 2
+
+\newpar
+\begin{proposition}
+If $m$ is an odd integer, then $4m^2+2m+7$ is odd.
+\end{proposition}
+\begin{proof}
+We will assume that $m$ is an odd integer and show that $4m^2+2m+7$ is odd.
+
+\newpar
+By the definition of an odd integer, there exists an integer $k$ such that $m=2k+1$. Thus,
+\begin{align*}
+4m^2+2m+7&=4(2k+1)^2+2(2k+1)+7 \\
+&= 4(4k^2+4k+1)+4k+9 \\
+&= 16k^2+20k+12+1 \\
+&= 2(8k^2+10k+6)+1. \\
+\end{align*}
+
+\noindent
+We will label $d=8k^2+10k+6$. Because 8, 10, 6 and $k$ are integers and the set of integers is closed under the operation of multiplication and addition, we know that $d$ is also an integer. Because $4m^2+2m+74=2d+1$, it can be determined by the definition of odd that $4m^2+2m+7$ is odd.
+
+\newpar
+We have proven that if $m$ is odd, then $4m^2+2m+7$ is odd, completing the proof.
+\end{proof}
+
+
+
+\end{document}
